@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lup Yu</title>
+
+    <style>
+        .container {
+            width: 900px;
+            height: 600px;
+            margin: auto;
+            position: relative;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .kotak1 {
+            width: 300px;
+            height: 470px;
+            left: 359px;
+            border-radius: 150px 150px 0 0;
+            background-color: red;
+            position: absolute;
+            transform: rotate(45deg);
+            z-index: 1;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .container:hover .kotak1 {
+            transform: rotate(-405deg);
+            left: 239px;
+        }
+
+        .kotak2 {
+            width: 300px;
+            height: 470px;
+            background-color: red;
+            border-radius: 150px 150px 0 0;
+            position: absolute;
+            left: 359px;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="kotak1"></div>
+        <div class="kotak2"></div>
+    </div>
+
+
+</body>
+</html>
